@@ -1,0 +1,58 @@
+.bonusContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.bonusContainer p {
+  margin: 0;
+}
+
+.bonusContainer .bHeading {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24.38px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.bonus > p {
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34.13px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@media only screen and (min-width: 684px) {
+  .bonus {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 744px) {
+  .bonusContainer .bHeading {
+    text-align: left;
+  }
+  .bonus {
+    justify-content: start;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .bonusContainer {
+    width: 149px;
+  }
+  .bonusContainer .bHeading {
+    text-align: center;
+  }
+  .bonus {
+    flex-direction: column;
+  }
+}
+

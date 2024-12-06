@@ -1,0 +1,44 @@
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.infoContainer .rating {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media only screen and (min-width: 744px) {
+  .infoContainer {
+    gap: 29px;
+    height: 162px;
+    width: 331px;
+  }
+
+  .infoContainer .rating {
+    gap: 19px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .infoContainer {
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    gap: 25px;
+    width: auto;
+  }
+
+  .infoContainer .rating {
+    width: 210px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .infoContainer {
+    gap: 60px;
+  }
+}

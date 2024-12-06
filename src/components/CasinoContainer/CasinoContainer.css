@@ -1,0 +1,58 @@
+.casinoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 0px 20px 0px #0000001a;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin: auto;
+}
+
+.casinoContainer .firstRow {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media only screen and (min-width: 744px) {
+  .casinoContainer {
+    gap: 25px;
+  }
+
+  .casinoContainer .firstRow {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 37px;
+    height: 162px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .casinoContainer {
+    padding: 16px;
+    padding-right: 35px;
+    flex-direction: row;
+    align-items: center;
+  }
+  .casinoContainer .firstRow {
+    justify-content: unset;
+    gap: 25px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .casinoContainer {
+    padding-right: 70px;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+  }
+  .casinoContainer .firstRow {
+    justify-content: unset;
+    gap: 60px;
+  }
+}
