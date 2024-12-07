@@ -10,9 +10,9 @@ const meta = {
     logoUrl: {
       control: "radio",
       options: [
-        "../src/assets/img/Logo_Grosvenor.png",
-        "../src/assets/img/Logo_Happy Spins.png",
-        "../src/assets/img/Logo_Hajper.png",
+        "/img/Logo_Grosvenor.png",
+        "/img/Logo_Happy Spins.png",
+        "/img/Logo_Hajper.png",
       ],
     },
     fill: {
@@ -27,7 +27,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    logoUrl: "../src/assets/img/Logo_Grosvenor.png",
+    logoUrl: "s/img/Logo_Grosvenor.png",
     alt: "logo",
     fill: "#03252B",
   },

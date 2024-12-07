@@ -4,7 +4,7 @@ const casinos: ICasino[] = [
   {
     id: 1,
     name: "Grosvenor Casinos",
-    logoUrl: "../src/assets/img/Logo_Grosvenor.png",
+    logoUrl: "/img/Logo_Grosvenor.png",
     logoBackgr: "#03252B",
     rating: 4,
     bet: 10,
@@ -13,7 +13,7 @@ const casinos: ICasino[] = [
   {
     id: 2,
     name: "Happy Spins",
-    logoUrl: "../src/assets/img/Logo_Happy Spins.png",
+    logoUrl: "/img/Logo_Happy Spins.png",
     logoBackgr: "#43082F",
     rating: 5,
     bet: 15,
@@ -22,7 +22,7 @@ const casinos: ICasino[] = [
   {
     id: 3,
     name: "Hajper",
-    logoUrl: "../src/assets/img/Logo_Hajper.png",
+    logoUrl: "/img/Logo_Hajper.png",
     logoBackgr: "#123156",
     rating: 3,
     bet: 20,

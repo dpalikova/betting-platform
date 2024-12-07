@@ -1,12 +1,12 @@
 import "./Rating.css";
+import fullStar from "/img/Star-full.png";
+import emptyStar from "/img/Star-empty.png";
 
 export interface RatingProps {
   rating: number;
 }
 
 export const Rating = ({ rating }: RatingProps) => {
-  const fullStar = "../src/assets/img/Star-full.png";
-  const emptyStar = "../src/assets/img/Star-empty.png";
   const stars = Array.from({ length: 5 }, (_, index) => index + 1);
 
   return (
