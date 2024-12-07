@@ -1,5 +1,5 @@
 import casinos from "../assets/data/casinos";
-import CasinoContainer from "../components/CasinoContainer/CasinoContainer";
+import { CasinoContainer } from "../components/CasinoContainer/CasinoContainer";
 import "./Casinos.css";
 
 export default function Casinos() {
