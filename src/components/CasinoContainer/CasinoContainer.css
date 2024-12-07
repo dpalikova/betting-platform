@@ -1,4 +1,4 @@
-.casinoContainer {
+.casino-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -11,18 +11,18 @@
   margin: auto;
 }
 
-.casinoContainer .firstRow {
+.casino-container .first-row {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
 @media only screen and (min-width: 744px) {
-  .casinoContainer {
+  .casino-container{
     gap: 25px;
   }
 
-  .casinoContainer .firstRow {
+  .casino-container .first-row {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -32,27 +32,26 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .casinoContainer {
+  .casino-container {
     padding: 16px;
     padding-right: 35px;
     flex-direction: row;
     align-items: center;
   }
-  .casinoContainer .firstRow {
+  .casino-container .first-row {
     justify-content: unset;
     gap: 25px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  .casinoContainer {
+  .casino-container {
     padding-right: 70px;
     flex-direction: row;
     align-items: center;
     gap: 60px;
   }
-  .casinoContainer .firstRow {
-    justify-content: unset;
+  .casino-container .first-row {
     gap: 60px;
   }
 }

@@ -1,13 +1,17 @@
 import "./CasinoContainer.css";
 import ICasino from "../../types/ICasino";
-import Button from "../Button/Button";
-import Logo from "../Logo/Logo";
-import InfoHolder from "../InfoHolder/InfoHolder";
+import { Button } from "../Button/Button";
+import { Logo } from "../Logo/Logo";
+import { InfoHolder } from "../InfoHolder/InfoHolder";
 
-export default function CasinoContainer({ data }: { data: ICasino }) {
+export interface CasinoContainerProps {
+  data: ICasino;
+}
+
+export const CasinoContainer = ({ data }: CasinoContainerProps) => {
   return (
-    <div className="casinoContainer">
-      <div className="firstRow">
+    <div className="casino-container">
+      <div className="first-row">
         <Logo logoUrl={data.logoUrl} alt={data.name} fill={data.logoBackgr} />
         <InfoHolder
           name={data.name}
@@ -16,7 +20,7 @@ export default function CasinoContainer({ data }: { data: ICasino }) {
           get={data.get}
         />
       </div>
-      <Button txt="Bet Now" />
+      <Button label="Bet Now" primary size="medium" />
     </div>
   );
-}
+};

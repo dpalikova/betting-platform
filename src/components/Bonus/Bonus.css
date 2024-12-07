@@ -1,20 +1,11 @@
-.bonusContainer {
+.bonus-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.bonusContainer p {
+.bonus-container p {
   margin: 0;
-}
-
-.bonusContainer .bHeading {
-  font-family: Montserrat;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 24.38px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 .bonus > p {
@@ -36,20 +27,14 @@
 }
 
 @media only screen and (min-width: 744px) {
-  .bonusContainer .bHeading {
-    text-align: left;
-  }
   .bonus {
     justify-content: start;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .bonusContainer {
+  .bonus-container {
     width: 149px;
-  }
-  .bonusContainer .bHeading {
-    text-align: center;
   }
   .bonus {
     flex-direction: column;

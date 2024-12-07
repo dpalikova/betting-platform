@@ -1,17 +1,15 @@
 import "./Logo.css";
 
-export default function Logo({
-  logoUrl,
-  alt,
-  fill,
-}: {
+export interface LogoProps {
   logoUrl: string;
   alt: string;
-  fill: string;
-}) {
+  fill?: string;
+}
+
+export const Logo = ({ logoUrl, alt, fill }: LogoProps) => {
   return (
-    <div style={{ backgroundColor: fill }} className="logo">
+    <div style={{ backgroundColor: fill }} className="storybook-logo">
       <img src={logoUrl} alt={alt} />
     </div>
   );
-}
+};

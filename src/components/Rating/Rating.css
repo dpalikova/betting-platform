@@ -1,18 +1,18 @@
-.ratingContainer {
+.rating-container {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
 }
 
-.ratingContainer .star {
+.rating-container .star {
   width: 31px;
   height: 31px;
   display: inline-block;
 }
 
 @media only screen and (min-width: 744px) {
-  .ratingContainer {
+  .rating-container {
     justify-content: start;
   }
 }

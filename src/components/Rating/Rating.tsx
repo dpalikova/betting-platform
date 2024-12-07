@@ -1,21 +1,24 @@
-import "./Rating.css"
-export default function Rating({ rating }: { rating: number }) {
-  const fullStar = "../src/assets/img/Star-full.png"; // Update with your full star PNG path
-  const emptyStar = "../src/assets/img/Star-empty.png"; // Update with your empty star PNG path
-  const maxStars = 5;
+import "./Rating.css";
 
-  const stars = Array(maxStars).fill(null);
+export interface RatingProps {
+  rating: number;
+}
+
+export const Rating = ({ rating }: RatingProps) => {
+  const fullStar = "../src/assets/img/Star-full.png";
+  const emptyStar = "../src/assets/img/Star-empty.png";
+  const stars = Array.from({ length: 5 }, (_, index) => index + 1);
 
   return (
-    <div className="ratingContainer">
-      {stars.map((_, index) => (
+    <div className="rating-container">
+      {stars.map((star) => (
         <img
-        className="star"
-          key={index}
-          src={rating > index ? fullStar : emptyStar}
-          alt={rating > index ? "Full Star" : "Empty Star"}
+          className="star"
+          key={star}
+          src={rating >= star ? fullStar : emptyStar}
+          alt={rating >= star ? "Full Star" : "Empty Star"}
         />
       ))}
     </div>
   );
-}
+};

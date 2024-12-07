@@ -1,13 +1,19 @@
+import { Heading } from "../Heading/Heading";
 import "./Bonus.css";
 
-export default function Offer({ bet, get }: { bet: number; get: number }) {
+export interface BonusProps {
+  bet: number;
+  get: number;
+}
+
+export const Bonus = ({ bet, get }: BonusProps) => {
   return (
-    <div className="bonusContainer">
-      <p className="bHeading">Bonus</p>
+    <div className="bonus-container">
+      <Heading name="Bonus" weight="heavy" />
       <div className="bonus">
         <p>Bet £{bet}</p>
         <p>Get £{get}</p>
       </div>
     </div>
   );
-}
+};
